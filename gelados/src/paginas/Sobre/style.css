@@ -1,0 +1,89 @@
+main {
+    display: flex;
+    flex-direction: column
+  }
+
+.sobre{
+    background-image: url('/public/assets/banner-sobre.png');
+    height:100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(249, 219, 121); */
+}
+
+.sobre h1{
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+
+.sobre-textos{
+    text-align: center;
+    line-height: 30px;
+    padding: 20px 30px; 
+}
+
+.sobre-textos div{
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-textos p {
+    text-align: center;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.sobre-textos h2{
+    font-size: 35px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.sobre-textos span{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sobre-img{
+    width:100%;
+    display: flex;
+}
+
+.sobre-img img{
+    width:50%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:768px){
+    .sobre h1{
+        font-size: 50px;
+    }
+
+    .sobre-img{
+        flex-direction: column;
+    }
+    .sobre-img img{
+        width:100%;
+    }
+
+}
+
+@media screen and (max-width:425px){
+    .sobre h1{
+        font-size: 40px;
+    }
+}
